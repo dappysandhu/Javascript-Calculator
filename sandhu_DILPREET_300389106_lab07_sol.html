@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content="Bambang">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lab 7: JavaScript Arithmetic Operator</title>
+    <link href="css/Lab07.css" rel="stylesheet">
+    <script src="script/script.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <h3>Lab 7: JavaScript Arithmetic Operator</h3>
+    </header>
+
+    <section style="background-color: lightsteelblue;">
+        <form name="mycalculator" action='' method='GET'>
+            <fieldset>
+                <legend name="legend-style">My calculator</legend>
+                <textarea name="output" rows="3" cols="20" placeholder="Result will appear here" readonly></textarea>
+            </fieldset>
+                </section>
+
+                    <section style="background-color: lightsteelblue;">
+            <fieldset>
+                <legend>Input</legend>
+                Operands: &nbsp;
+                <input type="text" name="input_a" id="input_a" size="10" maxlength="3" placeholder="Operand A" required>
+                &nbsp;
+                <input type="text" name="input_b" id="input_b" size="10" maxlength="3" placeholder="Operand B" required>
+                <br>
+                Operator: &nbsp;
+                <input type="button" name="add" value="+" onclick="Calculation('+')">
+                <input type="button" name="add" value="-" onclick="Calculation('-')">
+                <input type="button" name="mul" value="&times;" onclick="Calculation('X')">
+                <input type="button" name="div" value=":" onclick="Calculation(':')">
+                <input type="reset" value="Clear">
+            </fieldset>
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Bambang. All Rights Reserved.</p>
+    </footer>
+</body>
+
+</html>
